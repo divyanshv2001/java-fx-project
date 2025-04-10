@@ -1,10 +1,10 @@
 package application;
 	
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.fxml.FXMLLoader;
 
 
 public class Main extends Application {
@@ -15,11 +15,10 @@ public class Main extends Application {
 
 	@Override
 	public void start(Stage stg) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getResource("scene_1.fxml"));
-		Scene scene = new Scene(root);
+		Parent root=FXMLLoader.load(getClass().getResource("scene_1.fxml"));
+		Scene scene=new Scene(root);
 		stg.setScene(scene);
-		stg.setTitle("Scene Switcher");
-		stg.setResizable(false);
+		stg.setTitle("Login");
 		stg.show();
 	}
 }
