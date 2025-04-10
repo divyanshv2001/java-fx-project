@@ -21,4 +21,5 @@ public class Control_1 {
 		System.out.println("Roll: "+roll);
 		System.out.println("Password: "+pass);
 	}
+	
 }
