@@ -22,7 +22,7 @@ public class Main extends Application {
 		Parent root=FXMLLoader.load(getClass().getResource("scene_1.fxml"));
 		Scene scene=new Scene(root);
 		stg.setOnCloseRequest(event -> {
-			event.consume();
+			event.consume(); // helps in not closing the window
 			exit(stg);
 		});
 		stg.setScene(scene);
